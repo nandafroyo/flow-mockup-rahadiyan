@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flow - Create Account</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header class="container header-white">
+        <div class="header-container clearfix">
+            <a class="header-icon-back pull-left" href="login.html">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <span class="header-title">
+                Create Account
+            </span>
+        </div>
+    </header>
+        
+    <div class="form-wrapper container">
+        <div class="form-login-register">
+            <form action="login.html" method="post">
+                <div class="form-input">
+                    <input type="text" class="form" name="yourname" placeholder="Name">
+                </div>
+                <div class="form-input">
+                    <input type="email" class="form" name="email" placeholder="Email">
+                </div>
+                <div class="form-input">
+                    <input type="password" class="form" name="pass" placeholder="Password">
+                </div>
+                <div class="form-input">
+                    <input type="password" class="form" name="confirm-pass" placeholder="Confirm Password">
+                </div>
+
+                <button type="submit" name="submit_form" class="button-red-submit">CREATE ACCOUNT</button>
+
+                <p class="text-link">
+                    By creating an account you agree to the <a href="#" class="white">Terms of use</a>
+                </p>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="text-link-big"><a href="login.html" class="white">Already have an account?</a></div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function(){
+            $heigh = $(this).height();
+            $h_login = $(".form-wrapper").height();
+            $total = ($heigh-$h_login)/3;
+            $(".form-wrapper").css('padding-top',$total);
+        });
+    </script>
+</body>
+</html>

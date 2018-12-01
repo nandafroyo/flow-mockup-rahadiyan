@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flow</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="splash-screen">
+        <div class="splash-screen-font">Flow</div>
+    </div>
+
+    <div class="wrapper container no-padding">
+        <div class="landing-slider owl-carousel owl-theme">
+            <div class="item">
+                <div class="slider-home-image" style="background-image:url('assets/images/people-1.jpg');"> 
+                </div>
+                <div class="slider-home-content">
+                    <p class="slider-home-content-head">Welcome!</p>
+                    <p class="slider-home-content-desc">Never ever think of giving up. Winners never quit and quitters never win.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-home-image" style="background-image:url('assets/images/people-2.jpg');"> 
+                </div>
+                <div class="slider-home-content">
+                    <p class="slider-home-content-head">Hold your horses!</p>
+                    <p class="slider-home-content-desc">Never ever think of giving up. Winners never quit and quitters never win.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-home-image" style="background-image:url('assets/images/people-1.jpg');"> 
+                </div>
+                <div class="slider-home-content">
+                    <p class="slider-home-content-head">Hold your horses!</p>
+                    <p class="slider-home-content-desc">Never ever think of giving up. Winners never quit and quitters never win.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-home-image" style="background-image:url('assets/images/people-2.jpg');"> 
+                </div>
+                <div class="slider-home-content">
+                    <p class="slider-home-content-head">Hold your horses!</p>
+                    <p class="slider-home-content-desc">Never ever think of giving up. Winners never quit and quitters never win.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-home-image" style="background-image:url('assets/images/people-1.jpg');"> 
+                </div>
+                <div class="slider-home-content">
+                    <p class="slider-home-content-head">Hold your horses!</p>
+                    <p class="slider-home-content-desc">Never ever think of giving up. Winners never quit and quitters never win.</p>
+                    <div class="footer">
+                        <a class="button-red" href="login.html">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function(){
+            $heigh = $(this).height();
+            $h_login = $(".splash-screen>.splash-screen-font").height();
+            $total = ($heigh-$h_login)/2;
+            $(".splash-screen").css('padding-top',$total);
+        });
+
+        $(document).ready(function(){
+            $(".landing-slider").owlCarousel();
+        });
+
+        function defaultHeight(){
+            $(".splash-screen").css('padding-top',0);
+            $(".splash-screen").css('display','none');
+        }
+        
+        setTimeout(defaultHeight, 2000);
+
+        $('.landing-slider').owlCarousel({
+            loop: false,
+            margin: 0,
+            dots: true,
+            items: 7,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+</body>
+</html>

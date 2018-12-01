@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flow - Home</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="wrap" id="wrap">
+    <div id="mySidenav" class="side-navbar">
+            <li><a href="javascript:void(0)" class="closebtn" onclick="navClose()">&times;</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">Products</a></li>
+            <li><a href="home.html">About</a></li>
+            <li><a href="home.html">Team</a</li>
+            <li><a href="home.html">Contact Us</a></li>
+            <li><a href="setting.html">Settings</a></li>
+    </div>
+
+    <header class="container no-padding header-white">
+        <div class="header-container clearfix">
+            <a class="header-icon-menu pull-left" onclick="navOpen()">
+                <i class="fa fa-align-left"></i>
+            </a>
+            <span class="header-title">
+                Home
+            </span>
+            <a class="header-icon-cart pull-right" href="cart.html">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+        
+    <div class="container no-padding">
+        <div class="home-slider owl-carousel owl-theme">
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/slider-home-1.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/slider-home-2.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/slider-home-3.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/slider-home-4.jpg');"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container no-padding">
+        <div class="section-product">
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-1.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-2.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-3.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-1.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-2.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column-product">
+                <a href="product-detail.html">
+                    <div class="card-box-product">
+                        <div class="card-box-product-img" style="background-image:url('assets/images/product-3.jpg');"></div>
+                        <div class="card-box-product-detail">
+                            <div class="card-box-product-title">Product name</div>
+                            <div class="card-box-product-price">$300</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".home-slider").owlCarousel();
+        });
+
+        $('.home-slider').owlCarousel({
+            loop: false,
+            margin: 0,
+            dots: true,
+            items: 7,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+
+        function navOpen() {
+                $('#mySidenav').css('width', '250px');
+                $('#wrap').css('margin-left', '250px');
+                $('#wrap').css('width', '250px');
+        }
+
+        function navClose() {
+            $('#mySidenav').css('width', '0px');
+                $('#wrap').css('margin-left', '0px');
+                $('#wrap').css('width', '100%');
+
+        }
+
+    </script>
+</body>
+</html>

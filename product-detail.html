@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flow - Product Details</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="detail-product-wrapper">
+    <div class="container no-padding" style="position:relative;">
+        <header class="container header-transparent">
+            <div class="header-container clearfix">
+                <a class="header-icon-back pull-left" href="home.html">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="header-icon-cart pull-right" href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+        </header>
+        <div class="home-slider owl-carousel owl-theme">
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/product-detail-slider.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/product-detail-slider.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/product-detail-slider.jpg');"> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="home-slider-image" style="background-image:url('assets/images/product-detail-slider.jpg');"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container no-padding">
+        <div class="section-product">
+            <div class="card-box-product-detail">
+                <div class="card-box-product-title">Product name</div>
+                <div class="card-box-product-price">$300</div>
+                <div class="card-box-product-desc">
+                    <p>Buying the right telescope to take your love of astronomy to the next level is a big next step
+                    in the development of your passion for the stars. In many ways, it is a big step from someone who
+                    is just fooling around with astronomy to a serious student of the science. But you and I both
+                    know that there is still another big step after buying telescope before you really know how to use it.</p>
+
+                    <p>So it is critically  important that you get just the right telescope for where you are and what you star
+                    gazing your preferences are.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container addcart-button footer">
+        <a class="button-red" href="cart.html">ADD TO CART</a>
+    </div>
+</div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".home-slider").owlCarousel();
+        });
+
+        $('.home-slider').owlCarousel({
+            loop: false,
+            margin: 0,
+            dots: true,
+            items: 7,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+
+        $(document).ready(function(){
+            $documentHeight = jQuery(document).height();
+            $screenHeight = jQuery(window).height();
+            if($documentHeight > $screenHeight){
+                $('.addcart-button').removeClass('footer');
+            }
+        });
+
+         
+    </script>
+</body>
+</html>

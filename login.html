@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flow - Login</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="flow-logo">Flow</div>
+        <div class="form-login-register">
+            <form action="home.html" method="post">
+                <div class="form-input">
+                    <input type="email" class="form" name="email" placeholder="Email">
+                </div>
+                <div class="form-input">
+                    <input type="password" class="form" name="pass" placeholder="Password">
+                </div>
+
+                <button type="submit" name="submit_form" class="button-red-submit">SIGN IN</button>
+
+                <p class="text-link"><a href="forgot-password.html" class="white">Forgot password?</a></p>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="text-link-big"><a href="create-account.html" class="white">Don't have an account?</a></div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function(){
+            $heigh = $(this).height();
+            $h_login = $(".container").height();
+            $total = ($heigh-$h_login)/2;
+            $(".container").css('padding-top',$total);
+        });
+    </script>
+</body>
+</html>
